@@ -120,7 +120,7 @@ body{
     gap: 0 1rem;
 }
 
-.first{
+first{
     margin-top: 0.75rem;
 }
 
@@ -147,6 +147,7 @@ label{
     color: yellow;
     background-color: darkorchid;
     cursor: pointer;
+
     border : none;
     border-bottom-style: solid;
     border-bottom-color: gold;
