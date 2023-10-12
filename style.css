@@ -103,7 +103,7 @@
     font-weight: 548;
 }
 
-.label:hover{
+label{
     cursor: pointer;
 }
 
