@@ -103,6 +103,10 @@
     font-weight: 548;
 }
 
+.label{
+    cursor: pointer;
+}
+
 .check{
     margin: 0rem 0.6rem 0rem 1.7rem;
     scale: 1.5;
