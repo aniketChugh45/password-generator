@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+
+        <div class="heading-conatiner">
+            <h1 class="heading">PASSWORD GENERATOR</h1>
+        </div>
+
+        <div class="display-container">
+            <h2 class="password">PASSWORD</h2>
+            <div class="copy-txt">Copied</div>
+            <button class="copy-btn" onclick="copyPassword()">
+                <img src="copy.svg" width="30" height="30">
+            </button>
+        </div>
+
+        <div class="generate-container">
+
+            <div class="length-container">
+
+                <h3 class="length">Password Length</h3>
+                <h3 class="password-length">10</h3>
+
+            </div>
+
+            <div class="slider-class">
+                <input class="slider" type="range" min="1" max="20" value="10">
+            </div>
+
+                <div class="check1">
+                    <input type="checkbox" id="uppercase" class="check include-box">
+                    <label for="uppercase" class="label">Include Uppercase Letters</label>
+                </div>
+
+                <div class="check2">
+                    <input type="checkbox" id="lowercase" class="check include-box">
+                    <label for="lowercase" class="label">Include Lowercase Letters</label>
+                </div>
+
+                <div class="check3">
+                    <input type="checkbox" id="numbers" class="check include-box">
+                    <label for="numbers" class="label">Include Numbers</label>
+                </div>
+
+                <div class="check4">
+                    <input type="checkbox" id="symbols" class="check include-box">
+                    <label for="symbols" class="label">Include Symbols</label>
+                </div>
+
+            <div class="strength-container">
+
+                <h3>Strength</h3>
+                <div class="strength-indicator">
+
+                </div>
+
+            </div>
+
+            <button class="generate-password" onclick="generatePassword()">GENERATE PASSWORD</button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

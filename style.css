@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(90deg, rgba(0, 212, 206, 1) 0%, rgba(177, 130, 238, 1) 100%);;
+}
+
+.heading-container{
+    width: 90%;
+}
+
+.heading{
+    color: whitesmoke;
+    margin: 1rem;
+}
+
+.display-container{
+    width: 450px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkslateblue;
+    border-radius: 14px;
+    padding: 1rem;
+    border-bottom-style: solid;
+    border-bottom-color: darkviolet;
+    border-bottom-width: 5px;
+    position: relative;
+}
+
+.password{
+    color :darkgoldenrod;
+    letter-spacing: 0.4px;
+}
+
+.copy-btn{
+    appearance: none;
+    background: none;
+    border: none;
+}
+
+.copy-btn:hover{
+    cursor: pointer;
+}
+
+.generate-container{
+    width: 450px;
+    height: 444px;
+    display: flex;
+    flex-direction: column;
+    background-color: darkslateblue;
+    margin: 1.5rem;
+    border-radius: 14px;
+    border-bottom-style: solid;
+    border-bottom-color: darkviolet;
+    border-bottom-width: 5px;
+}
+
+.length-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.9rem;
+}
+
+.slider-class{
+    width: 450px;
+    padding-bottom : 1rem;
+    padding-left: 1.5rem;
+}
+
+.slider{
+    width: 400px;
+}
+
+.length{
+    color: whitesmoke;
+    letter-spacing: 0.4px;
+    font-size: 1.4rem;
+}
+
+.password-length{
+    color:yellow;
+    font-size: 1.4rem;
+}
+
+.check1 , .check2, .check3 , .check4 {
+    padding: 7px;
+    color: whitesmoke;
+    font-size: 1.25rem;
+    gap: 7px;
+    letter-spacing: 0.7px;
+    font-weight: 548;
+}
+
+.check{
+    margin: 0rem 0.6rem 0rem 1.7rem;
+    scale: 1.5;
+    cursor: pointer;
+}
+
+.strength-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 1.9rem 1.7rem 1.9rem;
+    color: whitesmoke;
+    letter-spacing: 0.4px;
+    font-size: 1.4rem;
+}
+
+.generate-password{
+    margin: 0rem 1.9rem 1.7rem 1.9rem;
+    font-size: 1.2rem;
+    font-weight: 550;
+    padding: 1rem 0rem;
+    border-radius: 10px;
+    color: yellow;
+    background-color: darkorchid;
+    cursor: pointer;
+    border : none;
+    border-bottom-style: solid;
+    border-bottom-color: gold;
+    border-bottom-width: 5px;
+    letter-spacing: 0.4px;
+}
+
+.strength-indicator{
+    border-radius: 100%;
+    background-color:  whitesmoke;
+    width: 25px;
+    height: 25px;
+    box-shadow: 0 0 7px 3px whitesmoke;
+}
+
+.strong-password{
+    background-color: rgb(21, 240, 21);
+    box-shadow: 0 0 7px 3px rgb(21, 240, 21);
+}
+
+.medium-password{
+    background-color: yellow;
+    box-shadow: 0 0 7px 3px yellow;
+}
+
+.weak-password{
+    background-color: red;
+    box-shadow: 0 0 7px 3px red;
+}
+
+.copy-txt{
+    scale: 0;
+    background-color: darkviolet;
+    padding: 5px 11px;
+    border-radius: 13px;
+    color: yellow;
+    letter-spacing: 0.4px;
+    position: absolute;
+    translate: 367px -36px;
+}
+
+.active{
+    scale: 1;
+}
+
+.include-box{
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border: solid cyan 1px;
+    border-radius: 4px;
+    background-color: darkslateblue;
+    position: relative;
+}
+
+.include-box:checked{
+    background-color: cyan;
+}
+
+.include-box:checked::before{
+    content: '✔';
+    position: absolute;
+    translate: 1.3px -3px;
+    font-weight: 590;
+}
+
+.slider{
+    appearance: none;
+    border-radius: 14px;
+    height: 0.75rem;
+    cursor: pointer;
+    background: hsl(268, 47%, 21%);
+    background-image: linear-gradient(hsl(285, 91%, 52%),hsl(285, 91%, 52%));
+    background-repeat: no-repeat;
+}
+
+.slider::-webkit-slider-thumb{
+    appearance: none;
+    position: relative;
+    background-color: yellow;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    box-shadow: 0 0 5px 1px yellow;
+    transition: all 100ms ease-in;
+
+}
+
+.slider:focus{
+    outline: yellow solid 2px;
+}
+
+.slider::-webkit-slider-thumb:hover{
+    background-color: hsl(268, 75%, 9%);
+    outline: yellow solid 2px;
+    box-shadow: 0 0 20px 4px yellow;
+}
